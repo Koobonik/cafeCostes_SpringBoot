@@ -1,0 +1,37 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+
+### JDBC URL 부분에 꼭 jdbc:h2:mem:testdb 넣어줘야함
+POST https://localhost:8080/request/posts
+//POST https://cafecostes.com/request/posts
+Content-Type: application/json
+
+{
+    "userNum" : 3,
+    "userLoginId": "hello",
+    "userLoginPassword": "q1w2e3r4",
+    "userName": "테스터",
+    "userEmail": "테스터@test.com",
+    "userPhoneNumber": "01022334455",
+    "coupon" : 0,
+    "age" : 24,
+    "gender" : "여",
+    "datetime" : ""
+
+
+//    "orderMesage": "asd",
+//    "msg": "hello",
+//    "americano": "good",
+//    "customList" : {
+//        "id" : 1,
+//        "customeName" : "shot",
+//        "customCount" : 3
+//    }
+
+}
+###

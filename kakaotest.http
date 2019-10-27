@@ -1,0 +1,26 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+
+### JDBC URL 부분에 꼭 jdbc:h2:mem:testdb 넣어줘야함
+//POST http://localhost:8080/request/posts
+POST https://kapi.kakao.com/v1/payment/ready HTTP/1.1
+Host: kapi.kakao.com
+Authorization: KakaoAK 9a16fe6f3af5a79e959ce6a391247f48
+Content-type: application/x-www-form-urlencoded;charset=utf-8
+cid: TC0ONETIME
+partner_order_id: 1001
+partner_user_id: gorany
+item_name: 갤럭시S9
+quantity: 1
+total_amount: 2100
+tax_free_amount: 100
+approval_url: https://localhost:8080/kakaoPaySuccess
+cancel_url: https://localhost:8080/kakaoPayCancel
+fail_url: https://localhost:8080/kakaoPaySuccessFail
+
+###
